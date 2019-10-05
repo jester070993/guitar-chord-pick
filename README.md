@@ -1,4 +1,4 @@
-A simple app that lets you select a guitar chord, hear the chord, and display chord fingering variations
+A simple app that lets you select a guitar chord, hear the chord, and display chord fingering variations. <br />
 Create-react-app and Material UI 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
