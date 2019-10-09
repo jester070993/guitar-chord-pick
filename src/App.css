@@ -1,5 +1,13 @@
+*{
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 .chordsList {
@@ -17,3 +25,64 @@
   color: white;
 }
 
+.theChord{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid steelblue;
+  border-radius: 4px;
+  max-width: 200px;
+}
+
+.chordSliderWrapper{
+  display: flex;
+  transition: all .5s ease-out;
+} 
+
+
+
+
+/* .chordSliderWrapper{
+  transform: translateX(-250px); 
+} */
+
+
+  
+
+
+
+
+.chordSliderWrapper .card{
+  flex: 1; 
+  margin: 10px;
+
+}
+
+.chordSlider{
+  position: relative;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.chordSlider:after{
+  content: "";
+    width: 100%;
+    height: 320px;
+    /* background-color: slategrey; */
+    border: 3px solid slategrey;
+    box-sizing: border-box;
+    border-radius: 10px;
+    left: 0;
+    position: absolute;
+    display: block;
+    top: 10px;
+    z-index: 10;
+}
+
+
+.chordTitle{
+  margin: 0;
+  padding-top: .5rem;
+  color: grey;
+}
