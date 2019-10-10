@@ -1,14 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel"
 
-import  Header from "./components/Header"
 import Button from "@material-ui/core/Button"
 import ButtonGroup from "@material-ui/core/ButtonGroup"
-
-import MainChart from "./components/MainChart"
-import Chords from "./components/Chords"
-import Display from "./components/Display"
 
 import ChordContainer from "./components/ChordContainer"
 import chordData from "./components/chordData"
@@ -40,7 +33,6 @@ class App extends React.Component {
 
 handleClickNext = () => {
   const newIndex = this.state.currentChord.id + 1 
-  const checkIndex = this.state.currentChord.id + 2
   console.log(this.state.index)
 
   this.setState(prevState => ({
@@ -52,7 +44,6 @@ handleClickNext = () => {
 
 handleClickPrev = () => {
   const newIndex = this.state.currentChord.id - 1 
-  const checkIndex = this.state.currentChord.id - 2
  
   this.setState(prevState => ({
     currentChord: chordData.chordData[newIndex],
@@ -64,8 +55,9 @@ handleClickPrev = () => {
   render(){ 
     return (
       <div className="App">
+        <h2 className="title"> Major/Minor Guitar Chords </h2>
         <div className="nextPrevBtn">
-          <ButtonGroup > 
+          <ButtonGroup size="large" color="primary" variant="contained" > 
             <Button onClick={() => {this.handleClickPrev()} } disabled={this.state.currentChord.id === 0}> Previous Chord </Button >
             <Button onClick={() => this.handleClickNext()}  disabled={this.state.currentChord.id === 6}> Next Chord </Button>
           </ButtonGroup>

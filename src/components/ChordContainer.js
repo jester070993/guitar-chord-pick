@@ -3,6 +3,8 @@ import React from "react"
 import Button from "@material-ui/core/Button"
 import ButtonGroup from "@material-ui/core/ButtonGroup"
 import chordVar from "./variationData"
+
+import { StylesProvider } from "@material-ui/styles"
 //audio
 import Maj1 from "./sounds/Guitar_Chords_-_A_major_1.mp3"
 import Maj2 from "./sounds/Guitar_Chords_-_B_major_1.mp3"
@@ -57,20 +59,24 @@ class ChordContainer extends React.Component{
     }
 
     render(){
-        console.log(this.state.chordVar)
         return(
             <div key={this.props.currentChord.id } className={`card cardActive${this.props.currentChord.id}`}>
                 <h2 className="chordTitle"> {!this.state.type ? this.props.currentChord.chord : this.state.chordVar[this.props.currentChord.id].chord } </h2>
-                <img  style={{maxWidth: 230}} src={ (!this.state.type) ? this.props.currentChord.src : this.state.chordVar[this.props.currentChord.id].src }/>
-                <ButtonGroup size="small" color="primary" variant="contained"> 
-                    <Button  disabled={this.props.index == this.props.currentChord.id ? false : true} onClick={() => this.handleSound()}>
+                <div style={{width: 230, height: 210, marginBottom: 10}}>
+                    <img  style={{maxWidth: 230, maxHeight: 206}} alt={(!this.state.type) ? this.props.currentChord.chord :   this.state.chordVar[this.props.currentChord.id].chord } src={ (!this.state.type) ? this.props.currentChord.src : this.state.chordVar[this.props.currentChord.id].src }/>
+                </div>
+                <StylesProvider injectFirst> 
+                <ButtonGroup size="large"   color="secondary" variant="contained"> 
+                    <Button  disabled={this.props.index === this.props.currentChord.id ? false : true} onClick={() => this.handleSound()}>
                         Play Chord
                     </Button>
-                    <Button disabled={this.props.index == this.props.currentChord.id ? false : true}
+                    <Button disabled={this.props.index === this.props.currentChord.id ? false : true}
                         onClick={ () => this.handleChordVariation() }>
                         {this.state.type ? "Major " : "Minor" }
                     </Button>
                 </ButtonGroup>
+                </StylesProvider>
+                
             </div>
         )
     }
