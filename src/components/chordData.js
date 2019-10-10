@@ -1,64 +1,39 @@
 const chordData = { 
       chordData: [
             {
-            number: 1,
             chord: "A",
             id: 0,
-            percent: 0,
-
             src:"https://www.chordbank.com/media/a-hero-750.jpg",
-            audioSrc: "C:\Users\Jesses-PC\Desktop\Web Dev\github\React_practice\guitar-chord-picker\src\components\aMajor.mp3"
         },
             {
-            number: 2,
             chord: "B",
             id: 1,
-            src: "https://www.chordbank.com/media/em-hero-750.jpg",
-            percent: 100
-
-
+            src:"https://www.chordbank.com/media/a-hero-750.jpg",
         },
             {
-            number: 3,
             chord: "C",
             id: 2,
-            src: "https://www.chordbank.com/media/em-hero-750.jpg",
-            percent: 200
-
+            src:"https://www.chordbank.com/media/a-hero-750.jpg",
         },
             {
-            number: 4,
             chord: "D",
             id: 3,
-            src: "https://www.chordbank.com/media/em-hero-750.jpg",
-            percent: 300
-
+            src:"https://www.chordbank.com/media/a-hero-750.jpg",
         },
             {
-            number: 5,
             chord: "E",
             id: 4,
-            src: "https://www.chordbank.com/media/em-hero-750.jpg",
-            percent: 400
-
-
+            src:"https://www.chordbank.com/media/a-hero-750.jpg",
         },
             {
-            number: 6,
             chord: "F",
             id: 5,
-            src: "https://www.chordbank.com/media/em-hero-750.jpg",
-            percent: 500
-
-
+            src:"https://www.chordbank.com/media/a-hero-750.jpg",
         },
             {
-            number: 7,
-            chord: "g",
+            chord: "G",
             id: 6,
-            src: "https://www.chordbank.com/media/em-hero-750.jpg",
-            percent: 600
-
+            src:"https://www.chordbank.com/media/a-hero-750.jpg",
         }
     ]
 }

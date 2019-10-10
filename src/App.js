@@ -22,7 +22,8 @@ class App extends React.Component {
     chords: chordData.chordData,
     currentChord: chordData.chordData[0],
     disabled: true,
-    transform:  ""
+    transform:  "",
+    index: 0
   }
 
 //   displayChord = (e) =>{
@@ -40,39 +41,39 @@ class App extends React.Component {
 handleClickNext = () => {
   const newIndex = this.state.currentChord.id + 1 
   const checkIndex = this.state.currentChord.id + 2
+  console.log(this.state.index)
 
   this.setState(prevState => ({
     currentChord: chordData.chordData[newIndex],
-    transform: `translateX(-${this.state.currentChord.number * 100}%)`
+    transform: `translateX(-${(this.state.currentChord.id + 1 )* 100}%)`,
+    index: prevState.index  + 1
   }))
 }
-
-
 
 handleClickPrev = () => {
   const newIndex = this.state.currentChord.id - 1 
   const checkIndex = this.state.currentChord.id - 2
-  
+ 
   this.setState(prevState => ({
     currentChord: chordData.chordData[newIndex],
-    transform: `translateX(-${this.state.currentChord.percent - 100}%)`
-
+    transform: `translateX(-${(this.state.currentChord.id * 100) - 100}%)`,
+    index: prevState.index  - 1
   }))
 }
-
-
 
   render(){ 
     return (
       <div className="App">
-        <ButtonGroup > 
-          <Button onClick={() => {this.handleClickPrev()} } disabled={this.state.currentChord.id === 0}> Previous Chord </Button >
-          <Button onClick={() => this.handleClickNext()}  disabled={this.state.currentChord.id === 6}> Next Chord </Button>
-        </ButtonGroup>
-        <div className="chordSlider">
+        <div className="nextPrevBtn">
+          <ButtonGroup > 
+            <Button onClick={() => {this.handleClickPrev()} } disabled={this.state.currentChord.id === 0}> Previous Chord </Button >
+            <Button onClick={() => this.handleClickNext()}  disabled={this.state.currentChord.id === 6}> Next Chord </Button>
+          </ButtonGroup>
+        </div>
+        <div className={`chordSlider activeSlide activeSlide-${this.state.currentChord.id}`}>
           <div className="chordSliderWrapper" style={{transform: this.state.transform }}>
           {this.state.chords.map(chord => (
-                 <ChordContainer  key={chord.id} currentChord={chord} />
+                 <ChordContainer  key={chord.id} currentChord={chord} index={this.state.index} />
           ))}
           </div>
         </div>
