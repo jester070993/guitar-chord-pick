@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/guitar-chord-pick/precache-manifest.89d3db0ab19be8388a39a1595c80c8bd.js"
+  "/guitar-chord-pick/precache-manifest.d7aa1384ba19a4b9c9a703b8e78c3bb4.js"
 );
 
 self.addEventListener('message', (event) => {

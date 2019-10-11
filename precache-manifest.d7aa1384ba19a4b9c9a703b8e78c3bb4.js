@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c67c7b0b498bcdd18b33d4f79526e697",
+    "revision": "edf0b05d417545c40d1b0f0921ccd69f",
     "url": "/guitar-chord-pick/index.html"
   },
   {
