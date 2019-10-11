@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/guitar-chord-pick/static/css/main.11f79cde.chunk.css",
+    "main.js": "/guitar-chord-pick/static/js/main.21850529.chunk.js",
+    "main.js.map": "/guitar-chord-pick/static/js/main.21850529.chunk.js.map",
+    "runtime-main.js": "/guitar-chord-pick/static/js/runtime-main.b9bc39d6.js",
+    "runtime-main.js.map": "/guitar-chord-pick/static/js/runtime-main.b9bc39d6.js.map",
+    "static/js/2.bf205dd9.chunk.js": "/guitar-chord-pick/static/js/2.bf205dd9.chunk.js",
+    "static/js/2.bf205dd9.chunk.js.map": "/guitar-chord-pick/static/js/2.bf205dd9.chunk.js.map",
+    "index.html": "/guitar-chord-pick/index.html",
+    "precache-manifest.89d3db0ab19be8388a39a1595c80c8bd.js": "/guitar-chord-pick/precache-manifest.89d3db0ab19be8388a39a1595c80c8bd.js",
+    "service-worker.js": "/guitar-chord-pick/service-worker.js",
+    "static/css/main.11f79cde.chunk.css.map": "/guitar-chord-pick/static/css/main.11f79cde.chunk.css.map",
+    "static/media/Guitar_Chords_-_A_major_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_A_major_1.ca041471.mp3",
+    "static/media/Guitar_Chords_-_A_minor_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_A_minor_1.3bd95706.mp3",
+    "static/media/Guitar_Chords_-_B_major_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_B_major_1.c1dec9e3.mp3",
+    "static/media/Guitar_Chords_-_B_minor_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_B_minor_1.519808e6.mp3",
+    "static/media/Guitar_Chords_-_C_major_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_C_major_1.53f15357.mp3",
+    "static/media/Guitar_Chords_-_C_minor_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_C_minor_1.8f533b90.mp3",
+    "static/media/Guitar_Chords_-_D_major_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_D_major_1.ac2499ea.mp3",
+    "static/media/Guitar_Chords_-_D_minor_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_D_minor_1.d4f7539d.mp3",
+    "static/media/Guitar_Chords_-_E_major_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_E_major_1.c2f26ec1.mp3",
+    "static/media/Guitar_Chords_-_E_minor_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_E_minor_1.24583c5d.mp3",
+    "static/media/Guitar_Chords_-_F_major_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_F_major_1.851a10ae.mp3",
+    "static/media/Guitar_Chords_-_F_minor_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_F_minor_1.ba3fc1dc.mp3",
+    "static/media/Guitar_Chords_-_G_major_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_G_major_1.a1f4fc25.mp3",
+    "static/media/Guitar_Chords_-_G_minor_1.mp3": "/guitar-chord-pick/static/media/Guitar_Chords_-_G_minor_1.ff5c70fe.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b9bc39d6.js",
+    "static/js/2.bf205dd9.chunk.js",
+    "static/css/main.11f79cde.chunk.css",
+    "static/js/main.21850529.chunk.js"
+  ]
+}
